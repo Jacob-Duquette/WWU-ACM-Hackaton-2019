@@ -24,6 +24,6 @@
   "browser_action": {
     "default_icon": "icons/tv.png",
     "default_title": "Image Watcher",
-    "default_popup": "popup/choose_beast.html"
+    "default_popup": "popup/watcher.html"
   }
 }
