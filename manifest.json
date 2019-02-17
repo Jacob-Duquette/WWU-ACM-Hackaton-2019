@@ -1,28 +1,29 @@
 {
 
-  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
+  "description": "Add image links to display as a gallery in your web browser. Supports mjpg ",
   "manifest_version": 2,
-  "name": "Beastify",
+  "name": "Image Watcher",
   "version": "1.0",
   "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
   "icons": {
-    "48": "icons/beasts-48.png"
+    "48": "icons/tv.png"
   },
 
-  "permissions": [
-    "activeTab"
-  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": ["storage"],
+
+  "applications": {
+    "gecko": {
+      "id": "watcher@example.com"
+    }
+  },
 
   "browser_action": {
-    "default_icon": "icons/beasts-32.png",
-    "default_title": "Beastify",
+    "default_icon": "icons/tv.png",
+    "default_title": "Image Watcher",
     "default_popup": "popup/choose_beast.html"
-  },
-
-  "web_accessible_resources": [
-    "beasts/frog.jpg",
-    "beasts/turtle.jpg",
-    "beasts/snake.jpg"
-  ]
-
+  }
 }
