@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body{
+    background-color:black;
+  }
+  #gallery {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0px auto;
+  }
+
+  #navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+
+  #navigation li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    clear: both;
+  }
+
+  #navigation li a img {
+    display: block;
+    border: none;
+  }
+
+  #navigation li a {
+    display: block;
+  }
+
+  #full-picture {
+    width: 600px;
+    height: 501px;
+    overflow: hidden;
+    float: left;
+  }
+</style>
+<body>
+    <div id="gallery">
+        <ul id="navigation">
+        <li><a href="#pic1"><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26363.jpg"></a></li>
+        <li><a href="#pic2"><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26256.jpg"></a></li>
+        <li><a href="#pic3"><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26258.jpg"></a></li>
+        <li><a href="#pic4"><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26269.jpg"></a></li>
+        <li><a href="#pic5"><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26132.jpg"></a></li>
+        </ul>
+        <div id="full-picture">
+        <div><a name="pic1"></a><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26363.jpg"></div>
+        <div><a name="pic2"></a><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26256.jpg"></div>
+        <div><a name="pic3"></a><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26258.jpg"></div>
+        <div><a name="pic4"></a><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26269.jpg"></div>
+        <div><a name="pic5"></a><img alt="" src="http://images.wsdot.wa.gov/nw/005vc26132.jpg"></div>
+        </div>
+    </div>
+</body>
+</html>
